@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "project_showcases",
+  "info": {
+    "singularName": "project-showcase",
+    "pluralName": "project-showcases",
+    "displayName": "Project showcase"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Projects": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "projects.projects",
+      "repeatable": true
+    }
+  }
+}

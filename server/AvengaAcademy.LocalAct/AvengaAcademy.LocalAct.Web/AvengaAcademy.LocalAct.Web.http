@@ -1,0 +1,6 @@
+@AvengaAcademy.LocalAct.Web_HostAddress = http://localhost:5100
+
+GET {{AvengaAcademy.LocalAct.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

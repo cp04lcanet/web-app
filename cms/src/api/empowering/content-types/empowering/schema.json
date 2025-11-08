@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empowerings",
+  "info": {
+    "singularName": "empowering",
+    "pluralName": "empowerings",
+    "displayName": "Empowering"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Component1": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "projects.projects",
+      "repeatable": true
+    }
+  }
+}
