@@ -9,8 +9,8 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copy the .csproj and restore dependencies
-COPY ["AvengaAcademy.LocalAct.Web.csproj", "AvengaAcademy.LocalAct.Web/"]
-RUN dotnet restore "AvengaAcademy.LocalAct.Web.csproj"
+COPY ["server/AvengaAcademy.LocalAct/AvengaAcademy.LocalAct.Web/AvengaAcademy.LocalAct.Web.csproj", "AvengaAcademy.LocalAct.Web/"]
+RUN dotnet restore "AvengaAcademy.LocalAct.Web/AvengaAcademy.LocalAct.Web.csproj"
 
 # Copy everything else
 COPY . .
