@@ -12,11 +12,12 @@ WORKDIR /src
 COPY ["server/AvengaAcademy.LocalAct/AvengaAcademy.LocalAct.Web/AvengaAcademy.LocalAct.Web.csproj", "AvengaAcademy.LocalAct.Web/"]
 RUN dotnet restore "AvengaAcademy.LocalAct.Web/AvengaAcademy.LocalAct.Web.csproj"
 
-# Copy everything else
-COPY . .
+
+# Copy the rest of the source code
+COPY server/AvengaAcademy.LocalAct/AvengaAcademy.LocalAct.Web/ AvengaAcademy.LocalAct.Web/
+WORKDIR "/src/AvengaAcademy.LocalAct.Web"
 
 # Build the project
-WORKDIR "/src/AvengaAcademy.LocalAct.Web"
 RUN dotnet build "AvengaAcademy.LocalAct.Web.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Publish stage
