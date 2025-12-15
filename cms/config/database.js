@@ -1,7 +1,7 @@
 const { parse } = require("pg-connection-string");
 
 module.exports = ({ env }) => {
-  const databaseUrl = env("DATABASE_URL", "postgres://avnadmin:AVNS_Xj0sX8oIq1VWacOCPMm@pg-d6517b2-cp04lcanet-bab6.g.aivencloud.com:21661/defaultdb?sslmode=require");
+  const databaseUrl = env("DATABASE_URL");
   const config = parse(databaseUrl);
 
   const aivenCa = `-----BEGIN CERTIFICATE-----
